@@ -74,6 +74,12 @@ const crearElemento = (bitacora, tbody) =>{
         tr.setAttribute("class", "click");
         tr.appendChild(td);
     });
+    let btntd = document.createElement("td");
+    let btn = document.createElement("input");
+    btn.type = "button";
+    btn.value = "Eliminar";
+    btntd.appendChild(btn);
+    tr.appendChild(btntd);
     tbody.appendChild(tr);
 }
 
